@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Задание Яндекс</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+        <div class="roof">
+            <div class="logo">
+                <img src="images/logo.png" alt="Yandex Logo"/>
+                <a class="logo__link" href="http://company.yandex.ru/">компания</a>
+            </div>
+            <div class="search">
+                <form method="GET" 
+                      enctype="application/x-www-form-urlencoded" 
+                      action="http://company.yandex.ru/search.xml">
+                    <div class="menu">
+                        <a href="http://www.yandex.ru/">Поиск</a>
+                        <a href="http://mail.yandex.ru/">Почта</a>
+                        <a href="http://maps.yandex.ru/">Карты</a>
+                        <a href="http://market.yandex.ru/">Маркет</a>
+                        <a href="http://news.yandex.ru/">Новости</a>
+                        <a href="http://slovari.yandex.ru/">Словари</a>
+                        <a href="http://blogs.yandex.ru/">Блоги</a>
+                        <a href="http://video.yandex.ru/">Видео</a>
+                        <a href="http://images.yandex.ru/">Картинки</a>
+                        <a href="http://auto.yandex.ru/">Авто</a>
+                        <a href="http://afisha.yandex.ru/">Афиша</a>
+                        <a href="http://money.yandex.ru/">Деньги</a>
+                    </div>
+
+                    <input type="text" id="search_text" name="text" />
+                    <input type="submit" id="search_button" value="Найти"/>
+                </form>
+            </div>
+            <div class="login">
+                Логин
+            </div>
+            <div class="social"></div>
+        </div>
+        <div class="facade">
+            <div class="sidebarLeft">
+                <ul>
+                    <li>
+                        <span id="sidebarGroup_title">О Яндексе</span>
+                        <ul class="sidebarGroup_list">
+                            <li>
+                                <a href="http://company.yandex.ru/about/main/">Миссия</a>
+                            </li>
+                            <li>
+                                <a href="http://company.yandex.ru/about/business/">Бизнес</a>
+                            </li>
+                            <li>
+                                <a href="http://company.yandex.ru/about/logotype/">Логотип</a>
+                            </li>
+                            <li>
+                                <a href="http://company.yandex.ru/about/people/">Лица</a>
+                            </li>
+                            <li>
+                                <a href="http://company.yandex.ru/about/history/">История</a>
+                            </li>
+                            <li>
+                                <a href="http://company.yandex.ru/about/offices/">Офисы</a>
+                            </li>
+                            <li>
+                                <a href="http://company.yandex.ru/about/celebration/">Праздники</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="sidebarGroup_title" href="http://company.yandex.ru/press_releases/">Новости</a>
+                    </li>
+                    <li>
+                        <span class="sidebarGroup_title">Исследования</span>
+                        <ul>
+                            <li>
+                                <a href="http://company.yandex.ru/researches/reports/">Информационные бюллетени</a>
+                            </li>
+                            <li>
+                                <a href="http://company.yandex.ru/researches/figures/">Картинки и цифры</a>
+                            </li>
+                            <li>
+                                <a href="http://company.yandex.ru/researches/cities/">Города</a>
+                            </li>
+                            <li>
+                                <a href="http://company.yandex.ru/researches/interes/">Прямой эфир</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="sidebarRight">
+                    Здесь должна быть информация о вакансиях
+                </div>
+                <div class="content">
+                    <h3><a href="http://company.yandex.ru/job/vacancies/">работа в яндексе</a></h3>
+                    <h2>Анкета второй Школы разработки интерфейсов в Москве</h2>
+                    <p>
+                        Яндекс открывает набор во вторую Школу разработки интерфейсов в Москве.
+                    </p>
+                    <p>
+                        Для поступления необходимо заполнить анкету с тестовыми заданиями. 
+                        Приём заявок закрывается 19 августа в 23:59 по московскому времени. 
+                        По результатам теста мы пригласим в Школу 30-40 человек.
+                    </p>
+                    <p>
+                        Подробности о Школе читайте на <a href="http://events.yandex.ru/shri/">этой странице</a>.
+                    </p>
+                    <span class="">Заполните анкету</span>
+                    <form method="POST">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table class="question">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Вопрос 1</td>
+                                                    <td>Год рождения.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <textarea name="question_1" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="question">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Вопрос 2</td>
+                                                    <td>Город, в котором живёте.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <textarea name="question_2" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="question">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Вопрос 3</td>
+                                                    <td>Вуз, факультет, специальность, кафедра.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <textarea name="question_3" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="question">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Вопрос 4</td>
+                                                    <td>Год окончания вуза.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <textarea name="question_4" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="question">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Вопрос 5</td>
+                                                    <td>Уровень владения английским языком:</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <input type="checkbox" id="english_beginner" name="english_beginner" value="0" />
+                                                        <label for="english_beginner">начальный;</label>
+                                                        <input type="checkbox" id="english_intermediate" name="english_intermediate" value="0" />
+                                                        <label for="english_intermediate">средний;</label>
+                                                        <input type="checkbox" id="english_prof" name="english_prof" value="0" />
+                                                        <label for="english_prof">свободное владение.</label>
+                                                    </td>
+                                                </tr>                                                
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <textarea name="question_5" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="question">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Вопрос 6</td>
+                                                    <td>Чего вы ожидаете от участия в Школе?</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <textarea name="question_6" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="question">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Вопрос 7</td>
+                                                    <td>Откуда вы о нас узнали?</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <textarea name="question_7" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="question">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Вопрос 8</td>
+                                                    <td>Сколько времени вы были бы готовы уделять стажировке или работе в Яндексе?</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <textarea name="question_8" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="question">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Вопрос 9</td>
+                                                    <td>Расскажите о вашем опыте разработки. Нам будет интересно всё — как серьезный интерфейс, так и просто домашняя страничка.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <textarea name="question_9" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="question">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Вопрос 10</td>
+                                                    <td>Если вы где-нибудь работали, расскажите, какие у вас были должностные обязанности и был ли опыт работы в команде.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <textarea name="question_10" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="question">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Вопрос 11</td>
+                                                    <td>
+                                                        Перечислите, какими программными продуктами вы пользуетесь в своей работе 
+                                                        — от редактора до специализированных утилит (Intellij Idea, Node.js, Uglify.js, GNU Make). 
+                                                        Для каждого инструмента укажите, какие задачи вы с помощью него 
+                                                        решаете и почему выбрали именно его.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <textarea name="question_11" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="question">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Вопрос 12</td>
+                                                    <td>
+                                                        Пользуетесь ли вы командной строкой? 
+                                                        Какими командами вы пользуетесь и какие задачи вы решаете с их помощью? 
+                                                        С какими программами вы преимущественно или полностью взаимодействуете 
+                                                        через интерфейс командной строки?
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <textarea name="question_12" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="question">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Вопрос 13</td>
+                                                    <td>
+                                                        <p>Напишите на JavaScript функцию, которая выводит список всех чисел, 
+                                                            которые равны сумме факториалов своих цифр. Пример такого числа:
+                                                        </p>
+                                                        <p>
+                                                            4! + 0! + 5! + 8! + 5! = 40585
+                                                        </p>
+                                                        <p>
+                                                            В качестве ответа на вопрос пришлите ссылку на 
+                                                            <a href="http://jsfiddle.net/">http://jsfiddle.net/</a>
+                                                            с вашим кодом или на ваш репозиторий на 
+                                                            <a href="https://github.com/">https://github.com/</a>.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <textarea name="question_13" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="question">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Вопрос 14</td>
+                                                    <td>
+                                                        <p>
+                                                            Вы — пилот грузового межгалактического корабля. Ваша работа — перевозка грузов с одной планету на другую. Грузоподъемность вашего корабля ограничена, поэтому за один рейс вы можете перевезти не более N кг полезного груза. Ваш корабль умеет сообщать свое состояние (местоположение и степень загруженности), а также летать в любую точку пространства. Каждая планета может содержать на себе груз, который можно взять. Также на каждой планете груз можно оставить .
+                                                        </p>
+                                                        <p>
+                                                            Задание
+                                                        </p>
+                                                        <p>
+                                                            Даны незавершенные интерфейсы корабля и планеты. Напишите недостающий код.
+                                                        </p>
+                                                        <p>
+                                                            Полное условие задачи доступно на <a href="https://github.com/yandex-shri/introtask-space">https://github.com/yandex-shri/introtask-space</a>.
+                                                        </p>
+                                                        <p>
+                                                            В качестве ответа на вопрос пришлите ссылку на 
+                                                            <a href="http://jsfiddle.net/">http://jsfiddle.net/</a>
+                                                            с вашим кодом или на ваш репозиторий на 
+                                                            <a href="https://github.com/">https://github.com/</a>.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <textarea name="question_14" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="question">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Вопрос 15</td>
+                                                    <td>
+                                                        <p>
+                                                            Сверстайте форму-анкету с нашими заданиями для кандидатов. Страница должна работать в следующих браузерах: MSIE (8, 9, 10), Google Chrome (26, 27), Firefox (20, 21), Opera (12.15, 12.14), Яндекс.Браузер 1.5. По возможности используйте приёмы безопасной деградации CSS. Страница должна содержать интерактив, реализованный с помощью JS и jQuery. Это может быть:
+                                                        </p><ul>
+                                                            <li>проверка полноты и правильности заполнения полей (где это возможно);</li>
+                                                            <li>возможность свернуть и развернуть разделы (аккордеон);</li>
+                                                            <li>индикатор заполнения анкеты;</li>
+                                                            <li>что-нибудь ещё.</li>
+                                                        </ul>
+                                                        <p>
+                                                            Подумайте над тем, как эти данные будут отправляться на сервер.
+                                                        </p><p>
+                                                            Будет плюсом, если вы сверстаете страницу, используя БЭМ.
+                                                        </p><p>
+                                                            Дополнительные задания
+                                                        </p><ol>
+                                                            <li>Выполните задание про форму-анкету, используя один из классических шаблонизаторов: Handlebars, mustache, Dust, Jade и т.п.</li>
+                                                            <li>Выполните задание про форму-анкету, используя один из экзотических шаблонизаторов: XSLT, YATE, BEMHTML и т.п.</li>
+                                                        </ol><p>
+                                                            Разработку необходимо вести на <a href="https://github.com/">https://github.com/</a>. В качестве ответа на вопрос пришлите ссылку на проект.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <textarea name="question_15" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h3>Расскажите нам о себе</h3>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Резюме до 250 КБ</td>
+                                                    <td>Загрузчик файла</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ссылка на профиль в Моём Круге</td>
+                                                    <td>
+                                                        <input type="text" name="moikrug"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Имя, Фамилия</td>
+                                                    <td>
+                                                        <input type="text" name="name"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Телефон</td>
+                                                    <td>
+                                                        <input type="text" name="phone"/>
+                                                        <span>Пожалуйста, укажите код города</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>E-mail</td>
+                                                    <td>
+                                                        <input type="text" name="email"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Дополнительные сведения</td>
+                                                    <td>
+                                                        <textarea name="additional_info"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        Откуда вы узнали о нашем предложении?
+                                                        <select name="info_source">
+                                                            <option selected="selected">Выбрать</option>
+                                                            <option>от HR-менеджера Яндекса</option>
+                                                            <option>Я.Субботник</option>
+                                                            <option>Yet Another Conference</option>
+                                                            <option>на другой конференции</option>
+                                                            <option>из поиска</option>
+                                                            <option>по рекомендации</option>
+                                                            <option>другое</option>
+                                                        </select>
+                                                        <input name="info_source_another" type="text"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <input type="checkbox" value="0" name="processing_agreement"/>
+                                                        Я даю свое согласие на передачу в ООО «ЯНДЕКС» 
+                                                        резюме и/или анкеты, содержащих мои персональные данные, 
+                                                        и согласен с тем, что они будут храниться в ООО «ЯНДЕКС» 
+                                                        в течение 5 лет и будут обрабатываться исключительно 
+                                                        для целей предложения мне вакансий группы компаний «ЯНДЕКС», 
+                                                        в соответствии с Федеральным законом «О персональных данных».
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="submit" value="Отправить" />
+                                        <input type="reset" value="Очистить" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="underground">
+                <a href="http://feedback2.yandex.ru/company/">Обратная связь</a>
+                <a href="http://legal.yandex.ru/">Правовые документы</a>
+                <a href="http://stat.yandex.ru/">Статистика</a>
+                <div class="underground__menulocale">
+                    <a href="http://company.yandex.ru/">
+                        <img src="images/ruRU.gif" alt="ruRU"/>
+                        Ru
+                    </a>
+                    <a href="http://company.yandex.com/">
+                        <img src="images/enEN.gif" alt="enEN"/>
+                        En
+                    </a>
+                    <a href="http://sirket.yandex.com.tr/" >
+                        <img src="images/trTR.gif" alt="trTR"/>
+                        Tr
+                    </a>
+                </div>
+                <span class="underground__copyright">
+                    © 1997–2013  ООО «<a href="http://www.yandex.ru">Яндекс</a>»
+                </span>
+            </div>
+
+        </div>
+    </body>
+</html>
