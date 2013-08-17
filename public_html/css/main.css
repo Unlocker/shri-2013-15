@@ -108,6 +108,15 @@ div.login{
     font-weight: bold;
 }
 
+.error{
+    font-size: small;
+    font-style: italic;
+    color: red;
+    font-weight: normal;
+    display: block;
+    
+}
+
 div.facade{
     top: 6em;
     width: 100%;
