@@ -1,0 +1,193 @@
+html, body{
+    font-family: sans-serif;
+    min-height: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+h1, h2, h3, h4{
+    font-weight: bold;
+}
+
+hr{
+    display: none;
+}
+
+table{
+    width: 100%;
+}
+
+/* Колонки */
+
+div.leftColumn{
+    float: left;
+    width: 14em;
+    left: 0em;
+    position: absolute;
+}
+
+div.middleColumn{
+    left: 14em;
+    right: 14em;
+    position: absolute;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+div.rightColumn{
+    float: right;
+    width: 14em;
+    right: 0em;
+    position: absolute;
+}
+
+a.kapitel{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: smaller;
+}
+
+/* Крыша */
+
+nav.roof{
+    padding-top: 0.3em;
+    width: 100%;
+    height: 4em;
+    margin-top: 1em;
+    display: table;
+}
+
+div.logo{
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+div.logo p{
+    margin: 0em;
+}
+
+div.search{
+    padding: 2px;
+    height: 100%;
+}
+
+div.search input{
+    margin: 2px;
+}
+
+div.search form {
+    background-color: red;
+    height: 2.5em;
+}
+
+div.search form input.search_text{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    width: 85%;
+}
+
+div.search form input.search_button{
+    margin-right: 0px;
+    position: relative;
+}
+
+div.login{
+    float: right;
+    padding-right: 0.5em;
+    width: 14em;
+    height: 100%;
+    text-align: right;
+}
+
+/* Фасад */
+.important {
+    font-weight: bold;
+}
+
+div.facade{
+    top: 6em;
+    width: 100%;
+}
+
+div.facade div.sidebarLeft ul{
+    list-style-type: none;
+}
+
+div.facade div.sidebarLeft ul li ul{
+    margin-left: -2em;
+}
+
+div.facade div.sidebarRight{
+    width: 25em;
+}
+
+div.facade div.content{
+    right: 25em;
+}
+
+table.question{
+    border-bottom-style: solid;
+    border-bottom-color: gainsboro;
+    border-bottom-width: thin;
+}
+
+table.question tbody tr td.question_number{
+    width: 30%;
+    font-style: italic;
+    font-size: smaller;
+    vertical-align: top;
+}
+
+table.question tbody tr td.question_self_text{
+    width: 30%;
+    font-size: smaller;
+    vertical-align: top;
+}
+
+table.question tbody tr td.question_text{
+    width: 70%;
+    font-size: smaller;
+    font-weight: bolder;
+    padding: 2px;
+}
+
+table.question tbody tr td textarea {
+    width: 100%;
+    height: 3em;
+    margin: 2px;
+}
+
+table.question tbody tr td input[type="text"] {
+    width: 100%;
+    margin: 2px;
+}
+
+span.hint{
+    font-size: small;
+    color: lightslategrey;
+    font-weight: normal;
+}
+
+td.submit{
+    background-color: gainsboro;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+td.submit input[type="submit"] {
+    margin-left: 12em;
+}
+
+/* Подвал */
+/* TODO разобраться и сделать */
+footer {
+    width: 100%;
+    height: 3em;
+    bottom: 0em;
+    position: absolute;
+    display: none;
+}
