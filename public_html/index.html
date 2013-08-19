@@ -6,105 +6,9 @@
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="css/main.css" type="text/css"></link>
         <script src="js/libs/jquery/jquery.js" type="text/javascript"></script>
+        <script src="js/main.js" type="text/javascript"></script>
         <script type="text/javascript" >
             //<![CDATA[
-            var check = function() {
-
-            };
-
-            var addError = function(element, message) {
-                // сообщение об ошибке уже есть, второе не нужно
-                if ($(element).next("span.error").size() > 0) {
-                    return;
-                }
-                var span = $("<span />")
-                        .attr("class", "error")
-                        .text(message);
-                $(element).after(span);
-            };
-
-            var clearErrors = function() {
-                $("span.error").remove();
-            };
-
-            var hasErrors = function() {
-                return $("span.error").size() > 0;
-            };
-
-            var validateYear = function(input) {
-                var text = $(input).val();
-                var numberPattern = /^\s*\d+\s*$/;
-                var msg = "Значением поля могут быть только числа в интервале от 1900 до 2013.";
-                if (!(text === null || text === undefined)) {
-                    var intVal = parseInt(text);
-                    if (!numberPattern.test(text) || intVal < 1900 || intVal > 2013) {
-                        addError(input, msg);
-                        return;
-                    }
-                }
-                $(input).next("span.error").remove();
-            };
-
-            var validateUrl = function(input) {
-                var text = $(input).val();
-                var msg = "Значением поля может быть только корректный адрес в сети Интернет";
-                if (!(text === null || text === undefined)) {
-                    var urlPattern = /^https?:\/\/[^ "]+$/;
-                    if (!urlPattern.test(text)) {
-                        addError(input, msg);
-                        return;
-                    }
-                }
-                $(input).next("span.error").remove();
-            };
-
-            var validateFileSize = function() {
-                $("input.validateFileSize[type='file']").each(function(index, input) {
-                    if (input.files !== undefined && (input.files[0].size / 1024) > 250) {
-                        addError(input, "Максимальный допустимый размер файла 250кБ");
-                        return;
-                    }
-                    $(input).next("span.error").remove();
-                });
-            };
-
-            var activateInfoSource = function() {
-                var field = "input[name='info_source_another']";
-                $(field).hide();
-                $("select[name='info_source']").change(function() {
-                    if ($(this).val() === "другое") {
-                        $(field).show();
-                    } else {
-                        $(field).hide();
-                    }
-                });
-            };
-
-            var activateSubmit = function() {
-                var selector = "td.submit input[type='submit']";
-                var submit = $(selector).first();
-                $(submit).attr("disabled", "disabled");
-                $("input[name='processing_agreement'][type='checkbox']").click(function() {
-                    if (this.checked) {
-                        $(submit).removeAttr("disabled");
-                    } else {
-                        $(submit).attr("disabled", "disabled");
-                    }
-                });
-            };
-            
-            var validateAll = function(){
-                $(".validateUrl").each(function() {
-                    validateUrl(this);
-                });
-
-                $(".validateYear").each(function() {
-                    validateYear(this);
-                });
-
-                validateFileSize();
-            };
-
             $(document).ready(function() {
                 activateInfoSource();
                 activateSubmit();
@@ -121,26 +25,26 @@
                     validateFileSize();
                 });
 
-                $("#questionnare").submit(function(event){
+                $("#questionnare").submit(function(event) {
                     event.preventDefault();
                     validateAll();
                     return !hasErrors();
                 });
                 var more = $("<a class='a_more' href='#'>ещё</a>").insertAfter("div.menu > a:nth-last-child(4)");
-               
+
                 var ul = $("<ul class='d_menu'/>").appendTo(more);
                 $(ul).hide();
-                 
-                $("div.menu > a").slice(-3).each(function(idx, obj){
+
+                $("div.menu > a").slice(-3).each(function(idx, obj) {
                     var li = $("<li/>").appendTo(ul);
                     $(obj).appendTo(li).parent().hide();
-                    
+
                 });
-                
-                $(more).hover(function(){
+
+                $(more).hover(function() {
                     $(this).find("ul").show();
                     $(this).find("li").show();
-                    $(".d_menu").mouseout(function(){
+                    $(".d_menu").mouseout(function() {
                         $(more).children().hide();
                     });
                 });
