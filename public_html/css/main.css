@@ -18,7 +18,6 @@ table{
 }
 
 /* Колонки */
-
 div.facade{
     width: 100%;
     top: 6em;
@@ -63,7 +62,6 @@ a.kapitel{
 }
 
 /* Крыша */
-
 nav.roof{
     width: 100%;
     height: 4em;
@@ -221,7 +219,6 @@ body {
 }
 
 /* Подвал */
-/* TODO разобраться и сделать */
 footer {
     width: 100%;
     height: 3em;
@@ -246,6 +243,14 @@ footer > * {
 .d_menu {
     position: absolute;
     border-style: solid;
-    background-color: lightgray;
-    right: 0px;
+    border-width: 1px;
+    background-color: white;
+    list-style: none;
+    top: 0.6em;
+    right: 17em;
+}
+
+.d_menu li{
+    line-height: 1em;
+    margin-left: -2em;
 }
