@@ -227,7 +227,13 @@ footer {
     height: 3em;
     bottom: 0em;
     position: absolute;
-    display: table
+    display: table;
+    font-size: small;
+    color: lightslategrey;
+    font-weight: normal;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: gainsboro;
 }
 
 footer > * {
