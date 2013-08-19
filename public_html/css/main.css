@@ -69,6 +69,12 @@ div.logo p{
     margin: 0em;
 }
 
+div.menu a{
+    margin-right: 1em;
+    font-size: small;
+    line-height: 3em;
+}
+
 div.search{
     padding: 2px;
     height: 100%;
@@ -124,6 +130,8 @@ div.facade{
 
 div.facade div.sidebarLeft ul{
     list-style-type: none;
+    font-size: small;
+    line-height: 2em;
 }
 
 div.facade div.sidebarLeft ul li ul{
