@@ -236,3 +236,10 @@ footer > * {
     padding-right: 2em;
     width: 20%;
 }
+
+.d_menu {
+    position: absolute;
+    border-style: solid;
+    background-color: lightgray;
+    right: 0px;
+}

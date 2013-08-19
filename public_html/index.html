@@ -121,11 +121,31 @@
                     validateFileSize();
                 });
 
-                $("td.submit input[type='submit']").click(function() {
+               /* $("td.submit input[type='submit']").click(function() {
                     validateAll();
-                    if (!hasErrors()) {
+                    if () {
                         submit();
                     }
+                });*/
+                $("#questionnare").submit(function(event){
+                    event.preventDefault();
+                    validateAll();
+                    return !hasErrors();
+                });
+                var more = $("<a id='more_a' href='#'>ещё</div>").appendTo($("div.menu > a:nth-last-child(4)"));
+               
+                var ul = $("<ul class='d_menu'/>").appendTo(more);
+                $(ul).hide();
+                 
+                $("div.menu > a").slice(-3).each(function(idx, obj){
+                    var li = $("<li/>").appendTo(ul);
+                    $(obj).appendTo(li).parent().hide();
+                    
+                });
+                
+                $(more).hover(function(){
+                    $(this).find("ul").show();
+                    $(this).find("li").show(20);
                 });
             });
             //]]>
