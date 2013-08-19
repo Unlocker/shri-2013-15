@@ -215,10 +215,24 @@ td.submit input[type="submit"] {
     margin-left: 12em;
 }
 
+body {
+    position: relative;
+    padding-bottom: 9em;
+}
+
 /* Подвал */
 /* TODO разобраться и сделать */
 footer {
     width: 100%;
     height: 3em;
     bottom: 0em;
+    position: absolute;
+    display: table
+}
+
+footer > * {
+    display: table-cell;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 20%;
 }
